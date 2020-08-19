@@ -40,26 +40,8 @@ class Queue {
     }
 }
 
-/* NO FUNCIONO
-const cola2 = new Queue()
-const cola3 = new Queue()
-function encolar(cola1) {
-    for(var i=0; i<cola1.length; i++){
-       if(i%2 === 0) {
-        cola2.enqueue(cola1[i])
-       } else {
-           cola3.enqueue(cola1[i])
-       }    
-    }
-    console.log(`cola2 = ${cola2}`)
-    console.log(`cola3 = ${cola3}`)
-    
-}
-*/
-
-
-var cola2 = []
-var cola3 = []
+const cola2 = []
+const cola3 = []
 function encolar(cola1) {
     for(var i=0; i<cola1.length; i++){
        if(i%2 === 0) {
@@ -72,8 +54,6 @@ function encolar(cola1) {
     console.log(`cola3 = ${cola3}`)
     
 }
-
-
 
 var cola1 = ['amarillo', 'rosa', 'rojo', 'verde', 'azul', 'negro', 'morado', 'blanco']
 console.log(encolar(cola1))

@@ -11,6 +11,33 @@ Cola: [{user:'User1',ticket:true},{user:'User2',ticket:true},{user:'User3',ticke
 {user:'User10',ticket:false},{user:'User11',ticket:true}]
 */
 
+cola= [{user:'User1',ticket:true},{user:'User2',ticket:true},{user:'User3',ticket:false},
+{user:'User4',ticket:true},{user:'User5',ticket:false},{user:'User6',ticket:false},
+{user:'User7',ticket:true},{user:'User8',ticket:true},{user:'User9',ticket:true},
+{user:'User10',ticket:false},{user:'User11',ticket:true}]
+
+
+// console.log("Entries --->", Object.entries(cola)) // Convierte un objeto en un arreglo
+
+// const fila = Object.entries(cola)
+
+const colaFinal = cola.filter((usuario) => {
+    return usuario.ticket == true
+});
+
+const retirados = cola.filter((usuario) =>{
+    return usuario.ticket == false
+})
+
+console.log("Cola Final: ")
+console.log(colaFinal)
+console.log("Elementos retirados de la fila: ")
+console.log(retirados)
+//console.log(fila[0])
+
+
+
+
 
 
 
